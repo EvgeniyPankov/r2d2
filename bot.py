@@ -56,8 +56,8 @@ def main():
         last_chat_id = last_update['message']['chat']['id']
         last_chat_name = last_update['message']['chat']['username']
         
-   if last_chat_name.lower() in clanone:
-		greet_bot.send_message(last_chat_id, 'Доброе утро, жрец {}'.format(last_chat_name))
+	if last_chat_name.lower() in clanone:
+			greet_bot.send_message(last_chat_id, 'Доброе утро, жрец {}'.format(last_chat_name))
 		
         new_offset = last_update_id + 1
 
