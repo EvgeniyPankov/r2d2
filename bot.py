@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-"""Telegram bot tutorial: https://djangostars.com/blog/how-to-create-and-deploy-a-telegram-bot/
-              in Russian: https://tproger.ru/translations/telegram-bot-create-and-deploy/"""
-
 import requests  
 import datetime
 
@@ -67,7 +64,7 @@ def main():
 ##            today += 1
 
         elif last_chat_text.lower() in greetings and today == now.day and 17 <= hour < 23:
-            greet_bot.send_message(last_chat_id, 'Добрый вечер, {}'.format(last_chat_name))
+            greet_bot.send_message(last_chat_id, 'Добрый вечер, жрец{}'.format(last_chat_name))
 ##            today += 1
 
         new_offset = last_update_id + 1
